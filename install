@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+# Ctrl + Alt + F1 Before Executing
+#
+chmod +x ./modules/*
+sudo su -
+#
+./modules/pkg-managers
+./modules/pkgs-rm
+./modules/pkgs
+./modules/extensions-git
+./modules/syst-settings
+./modules/third-party-repos
+./modules/flatpak
+#

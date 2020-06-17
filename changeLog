@@ -1,0 +1,9 @@
+# GenOS Changelog:
+
+  The system should be installed on full Btrfs by default.
+  
+  The system should separate Root Partition and Home Partition by default.
+  
+  The system should encrypt Partitions by default.
+  
+  Extra Third Party GNOME Shell Extensons should be installed: Night Theme Switcher; Blyr; Caffeine; Bluetooth Quick Connect.
