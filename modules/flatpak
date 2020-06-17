@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+# Adds Flathub repositories:
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+#
+# Flatpak GNOME apps and themes:
+flatpak install -y Extensions Fragments Flatseal
+#
+# Sandboxed GNOME Apps:
+#flatpak install -y gedit Evince Geary Lollypop Calendar clocks
+#
+# Sandboxed GNOME Recorders:
+#flatpak install -y SoundRecorder Cheese
+#
+# Sandboxed GNOME Utils:
+#flatpak install -y gnome.Calculator Characters Logs DejaDup gnome.Notes
+#
+# Sandboxed GNOME Dev Utils:
+#flatpak install -y gnome.Todo Builder DevHelp
+#
+# Sandboxed GNOME Games:
+#flatpak install -y gnome.Chess TwentyFortyEight Mahjongg Mines
+#
