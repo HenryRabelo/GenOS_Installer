@@ -1,0 +1,41 @@
+#!/bin/bash
+#
+zypper refresh
+zypper dup -y
+#
+# Backend:
+zypper install flatpak tlp unar chrome-gnome-shell gamemode grub2-breeze-theme adwaita-icon-theme gnome-backgrounds
+#
+# Gaming Toolset:
+#sudo zypper install steam-devices xboxdrv xserver-xorg-input-joystick -y
+#
+# GNOME Extensions:
+zypper install git make gettext gnome-shell-extension-{dash-to-dock,gsconnect,drive-menu,appindicator,desktop-icons}
+#
+# Suplementary Icon Themes:
+sudo zypper install elementary-icon-theme yaru-icon-theme
+#
+# GenOS Settings:
+zypper install appcenter gnome-software gnome-software-plugin-flatpak
+#
+# Core GNOME Apps:
+zypper install nautilus gedit totem evince file-roller geary gthumb lollypop gnome-calendar gnome-clocks
+#
+# Nautilus Plugins:
+zypper install file-roller-nautilus deja-dup-nautilus evince-nautilus nautilus-gsconnect sushi raw-thumbnailer
+#
+# GNOME Recorders:
+# sudo zypper install gnome-sound-recorder cheese
+#
+# GNOME Utils:
+zypper install gnome-calculator gnome-screenshot gnome-control-center gnome-disks gnome-characters gnome-logs deja-dup bijiben
+#
+# GNOME User Utils:
+zypper install gnome-usage gnome-terminal
+#
+# GNOME Dev Utils:
+#zypper install gnome-system-monitor gnome-todo gnome-builder devhelp sysprof baobab seahorse fractal tilix tilix-nautilus seahorse-nautilus
+#
+# GNOME Games:
+#zypper install gnome-chess gnome-2048 gnome-mahjongg gnome-mines
+#

@@ -1,0 +1,34 @@
+#!/bin/bash
+#
+# Enable Free / Non-Free RPMFusion repos:
+dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+#
+# Clears and rebuilds cache:
+#dnf clean all
+#dnf makecache
+#dnf update
+#
+# RPMFusion AppStream Setup:
+dnf groupupdate -y core
+#
+# Enable Packman Repositories:
+#zypper ar -cfp 90 http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/ packman
+#
+# RPMFusion Multimedia Post Install:
+dnf groupupdate -y multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+dnf groupupdate -y sound-and-video
+#
+# RPMFusion Tainted Repos Setup:
+dnf install -y rpmfusion-free-release-tainted
+dnf install -y rpmfusion-nonfree-release-tainted
+#
+# Multimedia / DVD Support:
+dnf groupinstall Multimedia -y
+dnf install libdvdcss libdvdread libdvdnav -y
+#
+# RPMFusion CODECs:
+dnf install -y exfat-utils lame lsdvd ffmpeg gvfs-{mtp,fuse} x264
+#
+# Install Microsoft True Type Fonts:
+rpm -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
+#

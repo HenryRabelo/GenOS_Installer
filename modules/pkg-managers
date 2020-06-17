@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# DNF Configuration - Enable Fastest Mirror and Delta Upgrades:
+cp /etc/dnf/dnf.conf ./
+echo 'fastestmirror=True' >> ./dnf.conf
+echo 'deltarpm=True' >> ./dnf.conf
+mv ./dnf.conf /etc/dnf/
+#
+# Zypper Configuration - Enable Repositories and create link to Yum Repos:
+dnf install -y zypper
+mv /etc/yum.repos.d/* /etc/zypp/repos.d/
+rmdir /etc/yum.repos.d
+ln -s /etc/zypp/repos.d /etc/yum.repos.d
+#

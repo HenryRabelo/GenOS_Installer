@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+# GNOME Plugins:
+zypper remove -y gnome-shell-extension-background-logo gnome-terminal-nautilus nautilus-sendto
+#
+# GNOME Extra Apps:
+zypper remove -y gnome-contacts gnome-maps gnome-weather
+#
+# GNOME Multimedia:
+zypper remove -y gnome-photos eog cheese rhythmbox simple-scan
+#
+# GNOME Developer Tools:
+zypper remove -y gnome-boxes gnome-system-monitor baobab gnome-terminal
+#
+# Cleanup:
+dnf autoremove -y
+#zypper rm -y dnf
+#
