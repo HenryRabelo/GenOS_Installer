@@ -6,4 +6,6 @@
   
   The system should encrypt Partitions by default.
   
+  If the system is EFI, systemd-boot should be used by default
+  
   Extra Third Party GNOME Shell Extensons should be installed: Night Theme Switcher; Blyr; Caffeine; Bluetooth Quick Connect.
