@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# GNOME Plugins:
+zypper remove -y grub2-*
+#
+# Enable sytemd-boot
+vgscan
+vgchange -ay
+dracut --regenerate-all --force
+bootctl install
+#

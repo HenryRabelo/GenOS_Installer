@@ -3,7 +3,7 @@
 # GNOME Plugins:
 zypper remove -y gnome-shell-extension-background-logo gnome-terminal-nautilus nautilus-sendto
 #
-# GNOME Extra Apps:
+# GNOME Accessories:
 zypper remove -y gnome-contacts gnome-maps gnome-weather
 #
 # GNOME Multimedia:

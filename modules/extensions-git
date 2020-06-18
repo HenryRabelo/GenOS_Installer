@@ -20,6 +20,14 @@ glib-compile-schemas --strict --targetdir=caffeine@patapon.info/schemas/ caffein
 cp -r caffeine@patapon.info ~/.local/share/gnome-shell/extensions
 cd ..
 #
+# Bluetooth Quick Connect:
+git clone https://github.com/bjarosze/gnome-bluetooth-quick-connect && cd gnome-bluetooth-quick-connect
+make
+rm -rf ~/.local/share/gnome-shell/extensions/bluetooth-quick-connect@bjarosze.gmail.com
+mkdir -p ~/.local/share/gnome-shell/extensions/bluetooth-quick-connect@bjarosze.gmail.com
+cp -r * ~/.local/share/gnome-shell/extensions/bluetooth-quick-connect@bjarosze.gmail.com
+cd ..
+#
 cd ..
 rm -r genos-temp
 #

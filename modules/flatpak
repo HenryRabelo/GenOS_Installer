@@ -16,7 +16,7 @@ flatpak install -y Extensions Fragments Flatseal
 #flatpak install -y gnome.Calculator Characters Logs DejaDup gnome.Notes
 #
 # Sandboxed GNOME Dev Utils:
-#flatpak install -y gnome.Todo Builder DevHelp
+#flatpak install -y gnome.Todo Builder DevHelp Seahorse Fractal
 #
 # Sandboxed GNOME Games:
 #flatpak install -y gnome.Chess TwentyFortyEight Mahjongg Mines
