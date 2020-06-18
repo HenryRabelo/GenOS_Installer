@@ -5,6 +5,9 @@ gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed true
 gsettings set org.gnome.shell.extensions.dash-to-dock extend-height true
 gsettings set org.gnome.shell.extensions.dash-to-dock require-pressure-to-show false
 gsettings set org.gnome.shell.extensions.dash-to-dock running-indicator-style 'DOTS'
+#gsettings set org.gnome.shell.extensions.dash-to-dock custom-theme-customize-running-dots true
+#gsettings set org.gnome.shell.extensions.dash-to-dock custom-theme-running-dots-color '#ffffff'
+#gsettings set org.gnome.shell.extensions.dash-to-dock custom-theme-running-dots-border-color '#ffffff'
 gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false
 gsettings set org.gnome.shell.extensions.dash-to-dock custom-background-color true
 gsettings set org.gnome.shell.extensions.dash-to-dock background-color '#000000'
@@ -16,8 +19,8 @@ gsettings set org.gnome.shell.extensions.dash-to-dock middle-click-action 'cycle
 gsettings set org.gnome.shell.extensions.dash-to-dock shift-middle-click-action 'quit'
 #
 # Modifies Dash to Panel settings:
-gsettings set org.gnome.shell.extensions.dash-to-panel dot-style-focused 'SEGMENTED'
-gsettings set org.gnome.shell.extensions.dash-to-panel dot-style-unfocused 'SEGMENTED'
+gsettings set org.gnome.shell.extensions.dash-to-panel dot-style-focused 'CILIORA'
+gsettings set org.gnome.shell.extensions.dash-to-panel dot-style-unfocused 'CILIORA'
 gsettings set org.gnome.shell.extensions.dash-to-panel trans-use-custom-opacity true
 gsettings set org.gnome.shell.extensions.dash-to-panel trans-use-dynamic-opacity true
 gsettings set org.gnome.shell.extensions.dash-to-panel trans-panel-opacity '0,7'
