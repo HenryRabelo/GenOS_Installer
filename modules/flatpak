@@ -4,7 +4,7 @@
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 #
 # Flatpak GNOME apps and themes:
-flatpak install -y Adwaita-dark Extensions Fragments Flatseal
+flatpak install -y Adwaita-dark Extensions Fragments Fractal
 #
 # Sandboxed GNOME Apps:
 #flatpak install -y gedit Evince Firefox Geary Lollypop Calendar Clocks
