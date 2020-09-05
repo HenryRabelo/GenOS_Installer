@@ -10,7 +10,7 @@ zypper remove -y gnome-contacts gnome-maps gnome-weather
 zypper remove -y gnome-photos eog cheese rhythmbox simple-scan
 #
 # GNOME Developer Tools:
-zypper remove -y gnome-boxes gnome-system-monitor baobab gnome-terminal
+zypper remove -y gnome-boxes gnome-system-monitor baobab
 #
 # Cleanup:
 dnf autoremove -y
