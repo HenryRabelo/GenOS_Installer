@@ -1,4 +1,8 @@
-# GenOS Changelog:
+# GenOS Installer Changelog:
+
+  -----------
+  Pre-Install
+  -----------
 
   The system should be installed on full Btrfs by default.
   
@@ -6,6 +10,18 @@
   
   The system should encrypt Partitions by default.
   
-  If the system is EFI, systemd-boot should be used by default
+  If the system is EFI, systemd-boot should be used by default.
   
-  Extra Third Party GNOME Shell Extensons should be installed: Night Theme Switcher; Blyr; Caffeine; Bluetooth Quick Connect.
+  ------------
+  Post-Install
+  ------------
+  
+  Installed Flatpak, Multimedia codecs and TLP resource management, which is on by default.
+
+  Installed MSCore Fonts to ensure maximum compatibility of LibreOffice and ONLYOFFICE to .docx documents.
+
+  Installed Geary and Lollypop for e-mail and music streaming.
+
+  Removed outdated or extra apps, for a more lean and secure system.
+
+  Installed Third Party GNOME Shell Extensons, for ease of use: Night Theme Switcher; Blyr; Caffeine; GSConnect.
